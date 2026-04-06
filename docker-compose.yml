@@ -1,0 +1,12 @@
+# =========================
+# docker-compose.yml
+# =========================
+
+version: '3'
+services:
+  bot:
+    build: .
+    container_name: telegram_bot
+    restart: always
+    environment:
+      - BOT_TOKEN=YOUR_BOT_TOKEN

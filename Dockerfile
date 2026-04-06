@@ -10,7 +10,7 @@ RUN pip install --no-cache-dir pyTelegramBotAPI requests
 COPY m.py bot.py ./
 
 # Copy the attack binary (king.dat) and rename it to 'king'
-COPY king.dat ./king
+COPY king ./king
 RUN chmod +x ./king
 
 # Persistent data directory (mount a volume here to survive restarts)

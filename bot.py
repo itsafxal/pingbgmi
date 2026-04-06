@@ -7,13 +7,13 @@ import telebot
 import subprocess
 import datetime
 
-TOKEN = os.getenv("BOT_TOKEN")
+TOKEN = os.getenv("BOT_TOKEN", "8692630498:AAFSNs0kqT0BOphPNzqehx9pilDX0IaIMJU")
 if not TOKEN:
     raise ValueError("BOT_TOKEN not set")
 
 bot = telebot.TeleBot(TOKEN)
 
-ADMIN_IDS = {"5365352961"}
+ADMIN_IDS = {"5794562450"}
 USER_FILE = "users.txt"
 LOG_FILE = "log.txt"
 
